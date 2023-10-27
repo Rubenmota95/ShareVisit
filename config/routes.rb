@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :places
+  get 'museus', to: 'places#museus'
+  get 'aldeias', to: 'places#aldeias'
+  get 'trilhos', to: 'places#trilhos'
+  get 'lagoas', to: 'places#lagoas'
 end
